@@ -259,7 +259,7 @@ video{
   text-align: center;
 }
 
-a {
+.cancela {
   position: relative;
   display: inline-block;
   padding: 7px 16px;
@@ -271,7 +271,7 @@ a {
   font-size: 20px;
 }
 
-a::before {
+.cancela::before {
   content: '';
   position: absolute;
   top: 6px;
@@ -283,11 +283,11 @@ a::before {
   transform: scaleY(1);
 }
 
-a:hover::before {
+.cancela:hover::before {
   transform: scaleY(0);
 }
 
-a::after {
+.cancela::after {
   content: '';
   position: absolute;
   left: 6px;
@@ -300,11 +300,11 @@ a::after {
   transition-delay: 0.5s;
 }
 
-a:hover::after {
+.cancela:hover::after {
   transform: scaleX(0);
 }
 
-a span {
+.cancela span {
   position: relative;
   z-index: 3;
 }
@@ -334,3 +334,32 @@ a span {
   cursor: pointer;
 }
 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logout-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 1s ease; 
+}
+
+
+.logout-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); 
+}

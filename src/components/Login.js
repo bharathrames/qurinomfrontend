@@ -72,7 +72,7 @@ const Login = () => {
       <div>
         <button type="submit" className='logandregbut'>Login</button>
       </div>
-      <div className='regorlog'>Don't have Account ? <Link to="/register" className='insideregorlog'>Register</Link></div>
+      <div className='regorlog'>Don't have Account ? <Link to="/" className='insideregorlog'>Register</Link></div>
     </form>
     <ToastContainer />
   </div>
